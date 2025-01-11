@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.giallo {
+  background-color: #ffc017;
+  overflow: hidden;
+}
+#nero {
+  border-bottom: 2px solid rgba(216, 216, 216, 0.869);
+}
+#nero2 {
+  border-bottom: 2px solid rgba(216, 216, 216, 0.869);
+}
+.container.header {
+  background-color: #ffc017;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+header ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+header ul {
+  margin-left: auto;
+  display: flex;
+  padding: 0;
+}
+header button {
+  background-color: #ffc017;
+  border-radius: 20%;
+}
+header img {
+  width: auto;
+  height: 40px;
+}
+.logo {
+  margin-right: 50px;
+}
+
+.hero {
+  width: 100%; /* Assicura che l'area del contenitore prenda tutta la larghezza disponibile */
+  padding: 50px 15px; /* Dà un po' di spazio attorno al contenuto */
+  background-color: #ffc017;
+}
+
+main {
+  width: 100%; /* Il main si estende alla larghezza completa della sua area contenente */
+  max-width: 900px; /* Imposta una larghezza massima per main */
+  position: relative;
+}
+main img {
+  position: absolute; /* Posizionamento assoluto */
+  width: 600px;
+  margin-top: 190px;
+  transform: translate(100%, -50%); /* Allinea esattamente al centro */
+}
+
+main h1 {
+  display: block;
+  font-size: 5rem; /* Aumenta la dimensione del titolo */
+  margin-bottom: 15px;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+main span {
+  display: block;
+  font-size: 1.2rem; /* Aumenta la dimensione del sottotitolo */
+  margin-bottom: 30px;
+}
+
+main button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+main button:hover {
+  background-color: #333;
+}
+
+.tom {
+  display: flex;
+}
+article h3 {
+  display: flex;
+  align-items: center;
+}
+article {
+  margin-bottom: 0;
+}
+/* Contenitore principale */
+.flex.tot {
+  display: flex;
+  align-items: center; /* Allinea verticalmente gli elementi al centro */
+  margin-bottom: 20px; /* Distanza tra i vari blocchi */
+  font-size: 14px; /* Riduce la dimensione del testo generale */
+  position: relative;
+}
+
+/* Contenitore della number */
+.number {
+  position: absolute; /* Posiziona "01" assolutamente rispetto al suo contenitore */
+  top: 0; /* Posiziona "01" in alto */
+  left: 0; /* Posiziona "01" a sinistra */
+  font-size: 22px; /* Aumenta leggermente la dimensione del numero */
+  font-weight: bold; /* Rende il numero in grassetto */
+  color: #dadada; /* Imposta un colore per il numero */
+  margin: 0; /* Rimuove il margine di default */
+  padding-left: 10px; /* Aggiunge un po' di spazio dalla sinistra */
+}
+
+/* Contenitore di fotonome (immagine e nome) */
+.fotonome {
+  display: flex;
+  align-items: center; /* Allinea verticalmente immagine e nome */
+  margin-right: 15px; /* Distanza tra l'immagine/nome e la data */
+}
+
+.fotonome img {
+  width: 10px; /* Riduce la dimensione dell'immagine */
+  height: 10px; /* Riduce la dimensione dell'immagine */
+  border-radius: 50%; /* Rende l'immagine rotonda */
+  margin-right: 10px; /* Distanza tra l'immagine e il nome */
+}
+
+.fotonome p {
+  font-size: 10px; /* Riduce la dimensione del nome */
+  margin: 0; /* Rimuove il margine del paragrafo */
+}
+
+/* Distanza tra il nome e la data */
+div > p {
+  margin: 8px 0; /* Distanza tra le righe del testo */
+  font-size: 12px; /* Riduce la dimensione del testo */
+  font-weight: bold;
+}
+
+/* Allineamento del nome "Tom Cooper" */
+.fotonome p {
+  font-weight: 500; /* Rende il nome in grassetto */
+}
+.fl {
+  margin-left: 40px;
+}
+.wrappali {
+  display: flex; /* Imposta un layout flex */
+  flex-wrap: wrap; /* Permette agli elementi di andare a capo quando non c'è più spazio */
+  gap: 20px; /* Distanza tra gli elementi */
+  justify-content: flex-start; /* Allinea gli elementi in modo ordinato, con spazio tra */
+}
+.wrappa {
+  width: calc(33.333% - 20px); /* Ogni wrappa occupa circa un terzo della larghezza, meno il gap */
+  box-sizing: border-box; /* Garantisce che padding e bordi non influiscano sulla larghezza */
+  padding: 10px; /* Aggiungi un po' di padding per distanziare gli articoli */
+  display: flex; /* Assicurati che il contenuto sia allineato correttamente */
+  flex-direction: column; /* Metti gli elementi in colonna */
+}
+.centra .fl {
+  position: relative;
+  max-width: 50%;
+}
+.imgabs {
+  width: 100%;
+  right: 0;
+}
+
+.allarga {
+  display: flex;
+  justify-content: space-between;
+}
+.imgabs {
+  display: flex;
+  justify-content: flex-end;
+}
+section {
+  margin-inline: inherit;
+  margin-top: 20px;
+}
+section div p:last-of-type {
+  color: rgba(216, 216, 216, 0.869);
+}
+section img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+.stella {
+  width: auto;
+}
+.container.section {
+  display: flex;
+  margin-right: 0;
+  margin-left: 145px;
+}
+.centra {
+  display: flex;
+}
+.container.nav {
+  margin-left: 0;
+}
+h4 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.ft {
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  border: 1px solid grey;
+  width: calc(33.333%-4px);
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+.fine {
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+footer ul li {
+  display: inline-block;
+  border: 1px solid grey;
+  width: calc(15%-4px);
+  color: grey;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
