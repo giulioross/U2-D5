@@ -11,11 +11,14 @@
   background-color: #ffc017;
   overflow: hidden;
 }
+.gri {
+  color: rgb(121 121 121);
+}
 #nero {
-  border-bottom: 2px solid rgba(216, 216, 216, 0.869);
+  border-bottom: 2px solid rgb(121 121 121);
 }
 #nero2 {
-  border-bottom: 2px solid rgba(216, 216, 216, 0.869);
+  border-bottom: 2px solid rgb(121 121 121);
 }
 .container.header {
   background-color: #ffc017;
@@ -37,8 +40,20 @@ header ul {
   padding: 0;
 }
 header button {
-  background-color: #ffc017;
-  border-radius: 20%;
+  background-color: black;
+  color: white;
+
+  border-radius: 20px;
+}
+
+#mainButton {
+  background-color: #000000;
+  border-radius: 20px;
+  color: white;
+}
+#mainButton.scrolled {
+  background: #1a8917;
+  transform: scale(1.1);
 }
 header img {
   width: auto;
@@ -49,26 +64,26 @@ header img {
 }
 
 .hero {
-  width: 100%; /* Assicura che l'area del contenitore prenda tutta la larghezza disponibile */
-  padding: 50px 15px; /* Dà un po' di spazio attorno al contenuto */
+  width: 100%;
+  padding: 50px 15px;
   background-color: #ffc017;
 }
 
 main {
-  width: 100%; /* Il main si estende alla larghezza completa della sua area contenente */
-  max-width: 900px; /* Imposta una larghezza massima per main */
+  width: 100%;
+  max-width: 900px;
   position: relative;
 }
 main img {
-  position: absolute; /* Posizionamento assoluto */
+  position: absolute;
   width: 600px;
   margin-top: 190px;
-  transform: translate(100%, -50%); /* Allinea esattamente al centro */
+  transform: translate(100%, -50%);
 }
 
 main h1 {
   display: block;
-  font-size: 5rem; /* Aumenta la dimensione del titolo */
+  font-size: 5rem;
   margin-bottom: 15px;
   font-family: "Poppins", serif;
   font-weight: 100;
@@ -77,7 +92,7 @@ main h1 {
 
 main span {
   display: block;
-  font-size: 1.2rem; /* Aumenta la dimensione del sottotitolo */
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
@@ -107,73 +122,70 @@ article h3 {
 article {
   margin-bottom: 0;
 }
-/* Contenitore principale */
+
 .flex.tot {
   display: flex;
-  align-items: center; /* Allinea verticalmente gli elementi al centro */
-  margin-bottom: 20px; /* Distanza tra i vari blocchi */
-  font-size: 14px; /* Riduce la dimensione del testo generale */
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
   position: relative;
 }
 
-/* Contenitore della number */
 .number {
-  position: absolute; /* Posiziona "01" assolutamente rispetto al suo contenitore */
-  top: 0; /* Posiziona "01" in alto */
-  left: 0; /* Posiziona "01" a sinistra */
-  font-size: 22px; /* Aumenta leggermente la dimensione del numero */
-  font-weight: bold; /* Rende il numero in grassetto */
-  color: #dadada; /* Imposta un colore per il numero */
-  margin: 0; /* Rimuove il margine di default */
-  padding-left: 10px; /* Aggiunge un po' di spazio dalla sinistra */
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #dadada;
+  margin: 0;
+  padding-left: 10px;
 }
 
-/* Contenitore di fotonome (immagine e nome) */
 .fotonome {
   display: flex;
-  align-items: center; /* Allinea verticalmente immagine e nome */
-  margin-right: 15px; /* Distanza tra l'immagine/nome e la data */
+  align-items: center;
+  margin-right: 15px;
 }
 
 .fotonome img {
-  width: 10px; /* Riduce la dimensione dell'immagine */
-  height: 10px; /* Riduce la dimensione dell'immagine */
-  border-radius: 50%; /* Rende l'immagine rotonda */
-  margin-right: 10px; /* Distanza tra l'immagine e il nome */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .fotonome p {
-  font-size: 10px; /* Riduce la dimensione del nome */
-  margin: 0; /* Rimuove il margine del paragrafo */
+  font-size: 10px;
+  margin: 0;
 }
 
-/* Distanza tra il nome e la data */
 div > p {
-  margin: 8px 0; /* Distanza tra le righe del testo */
-  font-size: 12px; /* Riduce la dimensione del testo */
+  margin: 8px 0;
+  font-size: 12px;
   font-weight: bold;
 }
 
-/* Allineamento del nome "Tom Cooper" */
 .fotonome p {
-  font-weight: 500; /* Rende il nome in grassetto */
+  font-weight: 500;
 }
 .fl {
   margin-left: 40px;
 }
 .wrappali {
-  display: flex; /* Imposta un layout flex */
-  flex-wrap: wrap; /* Permette agli elementi di andare a capo quando non c'è più spazio */
-  gap: 20px; /* Distanza tra gli elementi */
-  justify-content: flex-start; /* Allinea gli elementi in modo ordinato, con spazio tra */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
 }
 .wrappa {
-  width: calc(33.333% - 20px); /* Ogni wrappa occupa circa un terzo della larghezza, meno il gap */
-  box-sizing: border-box; /* Garantisce che padding e bordi non influiscano sulla larghezza */
-  padding: 10px; /* Aggiungi un po' di padding per distanziare gli articoli */
-  display: flex; /* Assicurati che il contenuto sia allineato correttamente */
-  flex-direction: column; /* Metti gli elementi in colonna */
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
 .centra .fl {
   position: relative;
   max-width: 50%;
@@ -186,6 +198,7 @@ div > p {
 .allarga {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .imgabs {
   display: flex;
@@ -196,12 +209,39 @@ section {
   margin-top: 20px;
 }
 section div p:last-of-type {
-  color: rgba(216, 216, 216, 0.869);
+  color: rgb(121 121 121);
+}
+section div p:nth-last-child(2) {
+  color: rgb(121 121 121);
 }
 section img {
   width: 150px;
   height: auto;
   object-fit: contain;
+  margin-right: -110px;
+}
+.buttonflex {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonflex button {
+  font-size: 10px;
+  padding: 3px 6px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.buttonflex .stella {
+  width: 14px;
+  height: 14px;
+}
+
+.buttonflex .stella + .stella {
+  margin-left: 10px;
 }
 .stella {
   width: auto;
@@ -216,6 +256,7 @@ section img {
 }
 .container.nav {
   margin-left: 0;
+  margin-top: 20px;
 }
 h4 {
   font-weight: bold;
@@ -228,8 +269,15 @@ h4 {
 
 nav ul li {
   display: inline-block;
-  border: 1px solid grey;
-  width: calc(33.333%-4px);
+  border: 1px solid rgb(121 121 121);
+  width: calc(33.33%-4px);
+  color: rgb(121 121 121);
+  padding: 3px;
+  border-radius: 10px;
+}
+nav ul li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 nav ul {
   display: flex;
@@ -244,9 +292,13 @@ nav ul {
 }
 footer ul li {
   display: inline-block;
-  border: 1px solid grey;
-  width: calc(15%-4px);
+
   color: grey;
+  margin-right: 3px;
+}
+footer ul li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 footer ul {
   display: flex;
@@ -255,4 +307,174 @@ footer ul {
   align-items: center;
   text-align: center;
   margin-top: 70px;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  main img {
+    width: 500px;
+    margin-top: 100px;
+    transform: translate(60%, -50%);
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+  }
+
+  main span {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  header ul {
+    display: block;
+    text-align: center;
+  }
+
+  header ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .wrappa {
+    width: calc(50% - 20px);
+  }
+
+  .container.section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .centra .fl {
+    max-width: 100%;
+  }
+
+  .allarga {
+    flex-direction: column;
+  }
+
+  .container.nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container nav footer ul {
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container.nav {
+    order: -1;
+  }
+
+  .container.section {
+    order: 1;
+  }
+
+  .container.footer {
+    order: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 20px 10px;
+  }
+
+  main {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  main img {
+    width: 400px;
+    margin-top: 80px;
+    transform: translate(50%, -50%);
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  main span {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    display: block;
+    text-align: center;
+  }
+
+  header ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  header button {
+    margin-top: 15px;
+  }
+
+  .wrappa {
+    width: 100%;
+  }
+
+  .container.section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .centra .fl {
+    max-width: 100%;
+  }
+
+  .allarga {
+    flex-direction: column;
+  }
+
+  .container.nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container nav footer ul {
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container.nav {
+    order: -1;
+  }
+
+  .container.section {
+    order: 1;
+  }
+
+  .container.footer {
+    order: 2;
+  }
 }
